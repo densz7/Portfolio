@@ -1,0 +1,49 @@
+.footer
+	padding-top 35px
+	padding-bottom 20px
+	min-height 83px
+	background-color $footer-color
+	
+	&__copyright
+		color #7cc0d4
+		font-size ($text-font+2)
+	
+	&__phone
+		margin-top -10px
+		float right
+		font-size 27px
+		color #7cc0d4
+		font-weight 700
+		text-transform uppercase
+	
+	&__social-icons
+		margin 0 auto
+		margin-top -12px
+		width 130px
+		font-size 0
+	
+	&__twitter
+	&__facebook
+	&__vk
+		margin-right 5px
+		width 39px
+		height @width
+		display inline-block
+		border-radius 3px
+	
+	&__vk
+		margin-right 0
+	
+	@media (max-width: $screen-xs-max)
+		text-align center
+		
+		&__social-icons
+			margin-top 20px
+		
+		&__phone
+			float none
+			font-size 24px
+		
+		&__copyright
+			margin-top 20px
+			font-size 15px
