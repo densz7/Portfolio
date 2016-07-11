@@ -1,7 +1,32 @@
 .showcase
-	margin-top 80px
-	padding 90px 0
+	margin-top 80px 
 	width 100%
-	border 2px solid #000
-	border-radius 10px
+	height 450px
+	background-size cover
+	background-repeat no-repeat
+	
+	&__filter
+		position relative
+		height 100%
+		width 100%
+		transition all .2s ease
+
+		&:hover
+			background-color rgba(#1F205B, .8)
+	
+	&__search-plus
+		position absolute
+		top 50%
+		left 50%
+		color #fff
+		transform translate(-50%, -50%)
+		opacity 0
+		transition all .2s ease
+	
+	&:hover .showcase__search-plus
+		opacity 1
+	
+	@media (max-width: $screen-xs-max)
+		height 350px
+
 	
