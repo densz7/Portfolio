@@ -9,10 +9,9 @@
 		position relative
 		height 100%
 		width 100%
+		background-color rgba(#1F205B, .8)
+		opacity 0
 		transition all .2s ease
-
-		&:hover
-			background-color rgba(#1F205B, .8)
 	
 	&__search-plus
 		position absolute
@@ -20,10 +19,9 @@
 		left 50%
 		color #fff
 		transform translate(-50%, -50%)
-		opacity 0
 		transition all .2s ease
 	
-	&:hover .showcase__search-plus
+	&:hover .showcase__filter
 		opacity 1
 	
 	@media (max-width: $screen-xs-max)
