@@ -1,0 +1,53 @@
+.social-icons
+	font-size 0
+
+	&__icon
+		margin-right 5px
+		display inline-block
+		width 45px
+		height @width
+		line-height @width
+		font-size 16px
+		color $color
+		text-align center
+		background-color #fff
+	
+		&--footer
+			margin-right 20px
+			width auto
+			height auto
+			line-height 1
+			background-color transparent
+			color #737373
+		
+		&--last
+			margin-right 0
+
+	@media (max-width: $screen-xs-max)
+		margin-bottom 40px
+			
+		&__icon
+			width 40px
+			height @width
+			line-height @width
+			
+			&--footer
+				margin-right 15px
+				width auto
+			
+			&--last
+				margin-right 0
+	
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max)
+		
+		&__icon
+			width 42px
+			height @width
+			line-height @width
+
+			&--footer
+				margin-right 18px
+				width auto
+			
+			&--last
+				margin-right 0

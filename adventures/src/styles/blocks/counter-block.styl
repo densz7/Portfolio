@@ -1,0 +1,27 @@
+.counter-block
+	padding-top 105px
+	height 250px
+	color #fff
+	background-color: rgba($main-color, .30)
+	background-repeat no-repeat
+	background-position: center 40px
+	transition all .35s linear
+	
+	&__number
+		font-size 40px
+		font-weight 600
+		text-transform uppercase
+	
+	&__desk
+		display block
+		font-size 14px
+		font-weight normal
+		text-transform uppercase
+		letter-spacing 5px
+	
+	&:hover
+		transform scale(1.2)
+	
+	@media (max-width: $screen-xs-max)
+		&:hover
+			transform scale(1)
